@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "scripts": {
+    "serve": "concurrently \"postcss css/tailwind.css -o src/dist/main.min.css --watch\"  \"live-server ./src\"",
+    "development": "postcss css/tailwind.css -o src/dist/main.min.css",
+    "production": "postcss css/tailwind.css -o src/dist/main.min.css",
+    "start": "npm run serve"
+  }
+}
